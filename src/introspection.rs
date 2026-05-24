@@ -2,7 +2,7 @@ use nu_protocol::{record, Span, Value};
 use serde::Deserialize;
 
 macro_rules! list_to_value {
-    ($list:expr, $span:expr) => {
+    ($list:expr_2021, $span:expr_2021) => {
         Value::list($list.iter().map(|i| i.to_value($span)).collect(), $span)
     };
 }

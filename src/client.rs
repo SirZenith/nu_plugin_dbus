@@ -21,7 +21,7 @@ pub struct DbusClient {
 
 // Convenience macros for error handling
 macro_rules! validate_with {
-    ($type:ty, $spanned:expr) => {
+    ($type:ty, $spanned:expr_2021) => {
         <$type>::new(&$spanned.item)
             .map_err(|msg| LabeledError::new("Invalid argument").with_label(msg, $spanned.span))
     };

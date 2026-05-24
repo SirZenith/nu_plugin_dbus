@@ -140,7 +140,7 @@ impl DbusType {
 
 #[cfg(test)]
 macro_rules! should_parse_to {
-    ($str:expr, $result:expr) => {
+    ($str:expr_2021, $result:expr_2021) => {
         assert_eq!(DbusType::parse($str), Ok(($result, "")))
     };
 }
@@ -284,7 +284,7 @@ fn test_parse_all() {
 
 #[cfg(test)]
 macro_rules! should_stringify_to {
-    ($type:expr, $result:expr) => {
+    ($type:expr_2021, $result:expr_2021) => {
         assert_eq!(DbusType::stringify(&$type), $result)
     };
 }

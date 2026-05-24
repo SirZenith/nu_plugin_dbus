@@ -99,7 +99,7 @@ pub fn to_message_item(
 ) -> Result<MessageItem, LabeledError> {
     // Report errors from conversion. Error must support Display
     macro_rules! try_convert {
-        ($result_expr:expr) => {
+        ($result_expr:expr_2021) => {
             $result_expr.map_err(|err| {
                 LabeledError::new(format!(
                     "Failed to convert value to the D-Bus `{:?}` type",
